@@ -70,6 +70,10 @@ Config is the path to the JSON config file. If no path is provided, Helicopter w
 
 - list of individual files to monitor
 
+## On Exit
+
+When helicopter closes, it will send a webhook message. The main reason for this is to alert the operator if the program fails unexpectedly. Additionally, Helicopter creates a lock file at '/etc/helicopter/lock' on exit. If this file is present on startup, Helicopter won't start.
+
 ## To-dos
 
 - 
