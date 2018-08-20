@@ -1,0 +1,20 @@
+{
+  "webhook":{
+    "url":"http://127.0.0.1:8081/webhook",
+    "type":"teams",
+    "id":"server01"
+  },
+  "time":{  
+    "delay":5,
+    "throttle":5
+  },
+  "directories":[
+    {
+      "root":"/var/www/html/payloads",
+      "glob":"*.exe"
+    }
+  ],
+  "files":[
+    "/var/www/html/images/thumbnail.png"
+  ] 
+}
